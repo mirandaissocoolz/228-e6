@@ -19,6 +19,11 @@
       font-family: "Ledger", serif;
       font-weight: 400;
       font-style: normal;  
+      background-color: beige;
+      padding: 20px;
+      font-size: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
       }
       
       h1 , h2 , ul {
@@ -29,10 +34,12 @@
       
       h1 {
       font-weight: 600;
+      font-size: 25px;
       }
       
       h2 {
       font-weight: 500;
+      font-size: 20px;
       }
       
       ul {
@@ -56,11 +63,34 @@
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 20px;
       }
       
       .grid-item {
         background-color: ivory;
+        text-align: center;
+        max-width: 100%;
+      }
+      
+      .grid-item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .grid-item p {
+        padding: 20px;
+      }
+      
+      .hero {
+        font-size: 28px;
+      }
+      
+      footer {
+        background-color: darkgreen;
+        color: ivory;
+        text-align: center;
+        padding: 30px 25px;
+        margin-top: 40px;
       }
       
     </style>
@@ -69,14 +99,16 @@
 
     <h1>Greg’s Banh Mi</h1>
 
+    <nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Menu</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
+    </nav>
 
-    <h1>At Greg’s Banh Mi, we’re serving up the perfect marriage of French and Vietnamese culinary traditions&mdash;crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.</h1>
+    <h2 class="hero"> At Greg’s Banh Mi, we’re serving up the perfect marriage of French and Vietnamese culinary traditions&mdash;crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.</h2>
     
     <div class="container">
     <div class="grid-item">
